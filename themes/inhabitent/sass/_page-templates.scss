@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+
+.header-hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../../images/home-hero.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pages with SideBars */
+
+.blog, .single {
+
+  .site-content {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-area{
+    width: 73%;
+    margin-top: 30px;
+    padding-right: 5%;
+  }
+
+  .widget-area {
+   width: 25%;
+   border-left: $border__solid;
+ }
+
+}

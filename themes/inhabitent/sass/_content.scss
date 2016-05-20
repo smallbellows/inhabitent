@@ -1,0 +1,103 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+/* Journal Page Contents */
+
+.blog .entry-header, .single .entry-header {
+
+	position: relative;
+
+	img {
+		height: auto;
+		width: 100%;
+	}
+
+	.entry-title a, .entry-meta a {
+		color: $color__button-text;
+	}
+
+
+	h1.entry-title, h2.entry-title {
+		font-size: 2.8rem;
+		color: $color__button-text;
+		background: $color__brand-main;
+		position: absolute;
+		top: 5%;
+		left: 0;
+		text-transform: uppercase;
+		max-width: 75%;
+		padding: 1rem 2rem;
+	}
+
+	.entry-meta{
+		color: $color__button-text;
+		background: $color__brand-main;
+		position: absolute;
+		bottom: 8px;
+		right: 0;
+		text-transform: uppercase;
+		font-family: $font__header;
+		padding: 0.3rem 1rem;
+		font-size: 0.9rem;
+	}
+}
+
+
+
+
+.cat-links, .tags-links {
+	font-family: $font__header;
+	text-transform: uppercase;
+}
+
+.tags-links {
+	padding-left: 2rem;
+}
+
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}

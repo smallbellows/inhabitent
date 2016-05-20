@@ -1,0 +1,30 @@
+.comments-area {
+
+  h2, h3 {
+    text-transform: uppercase;
+  }
+}
+
+.comment-body {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+  .comment-author-avatar {
+    float: left;
+    width: 75px;
+  }
+
+  .comment-meta, .comment-content {
+    margin-left: 75px;
+    padding-left: $base__space-unit;
+  }
+
+  .comment-content {
+    padding-bottom: $base__space-unit;
+    border-bottom: $border__solid;
+  }
+
+.avatar {
+  border-radius: 50%;
+}

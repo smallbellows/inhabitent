@@ -1,0 +1,42 @@
+
+.site-header {
+
+  padding: 15px 0;
+  border-bottom: $border__solid;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-branding {
+
+  h1 {
+    height: 33px;
+    width: 50px;
+    margin: 0;
+    background: url('../../images/logos/inhabitent-logo-tent.svg') no-repeat;
+    background-size: 50px 33px;
+    overflow: hidden;
+    text-indent: 100%;
+  }
+}
+
+
+
+.home .site-header  {
+  position: absolute;
+  z-index: 3;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: none;
+
+}
+
+.home .site-branding {
+  h1 {
+    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: 50px 33px;
+  }
+}
