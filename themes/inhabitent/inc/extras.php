@@ -49,3 +49,36 @@ function inhabitent_login_url( $url ) {
     return home_url();
 }
 add_filter( 'login_headerurl', 'inhabitent_login_url' );
+
+// Put About Hero Image into the choose_from_most_used
+
+function inhabitent_about_header_css() {
+
+			if(!is_page_template( 'about.php' )) {
+				return;
+			}
+
+			$background_image = CFS()->get('hero_image');
+      $custom_css = "
+                .about-header{
+                        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+																url('$background_image') center center no-repeat;
+																background-size: cover;
+                }";
+        wp_add_inline_style( 'inhabitent-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_header_css' );
+
+
+// Display up to 16 products on Product Archive Pages
+
+function inhabitent_filter_product_query( $query ) {
+
+	if ( is_post_type_archive('product') && !is_admin() && $query->is_main_query() ) {
+		$query->set( 'orderby', 'title' );
+		$query->set( 'order', 'ASC' );
+		$query->set( 'posts_per_page', 16 );
+	}
+}
+
+add_action( 'pre_get_posts', 'inhabitent_filter_product_query' );
