@@ -32,5 +32,18 @@
          url('../../fonts/merriweather-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+}
 
+@font-face {
+    font-family: 'Novocento';
+    src: url('../../fonts/Novecentosanswide-Normal.ttf') format ('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novocento';
+    src: url('../../fonts/Novecentosanswide-DemiBold.ttf') format ('ttf');
+    font-weight: bold;
+    font-style: normal;
 }

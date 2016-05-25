@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------
+# Product CPT Styles
+--------------------------------------------------------------*/
+
+/* Single Product Pages */
+
+
+.single-product {
+
+  .content-area {
+    width: 100%;
+  }
+  article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    margin-top: 0;
+    color: $color__brand_secondary;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .entry-content {
+    margin-top: 0;
+  }
+}
+
+.product-image-wrapper {
+
+  flex: 0 1 48%;
+}
+
+.product-description-wrapper {
+  flex: 0 1 48%;
+}
+
+h3.price {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+/* Product Archive Pages */
+
+.page-header-products {
+  text-align: center;
+  border-bottom: $border__dashed;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+
+}
+
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+
+  .product-item {
+    width: 24%;
+    margin-top: 1%;
+  }
+
+  .product-image {
+      max-height: 250px;
+      overflow: hidden;
+
+      .wp-post-image {
+
+        min-height: 250px;
+        max-height: 250px;
+        overflow: hidden;
+      }
+    }
+
+  .product-meta {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: $border__solid;
+    border-top-width: 5px;
+    padding: 5px 2px;
+
+    h2 {
+      margin: 0;
+    }
+    h2 a {
+      font-weight: normal;
+      color: black;
+      font-family: $font__main;
+      font-size: 1rem;
+      display: inline-block;
+    }
+  }
+}

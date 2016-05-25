@@ -27,7 +27,7 @@ $color__button-text: #fff;
 // Typography
 
 $font__main: 'Merriweather', serif;
-$font__header: sans-serif;
+$font__header: 'Novocento'sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.75;
@@ -36,3 +36,4 @@ $font__line-height-pre: 1.6;
 // Borders
 
 $border__solid: 1px solid #e1e1e1;
+$border__dashed: 1px dashed #c8c8c8;

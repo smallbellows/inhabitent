@@ -23,20 +23,20 @@
   }
 }
 
+.home, .page-template-about {
+  .site-header  {
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: none;
 
+  }
 
-.home .site-header  {
-  position: absolute;
-  z-index: 3;
-  background-color: transparent;
-  width: 100%;
-  border-bottom: none;
-
-}
-
-.home .site-branding {
-  h1 {
-    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
-    background-size: 50px 33px;
+  .site-branding {
+    h1 {
+      background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+      background-size: 50px 33px;
+    }
   }
 }

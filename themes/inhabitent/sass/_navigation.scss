@@ -36,11 +36,30 @@ a {
 	font-size: 0.9rem;
 }
 
-.read-more {
+
+
+.button-reverse {
+	@extend .button;
+	color: white;
+	background: $color__link;
+}
+
+.read-more, .social-button {
 	@extend .button;
 	border-color: #000;
 	color: #000;
 
+	&:hover {
+		color: white;
+		border-color: $color__link;
+		background: $color__link;
+	}
+}
+
+.read-more-white {
+	@extend .button;
+	border-color: white;
+	color: white;
 }
 
 /* Menus */
@@ -116,7 +135,7 @@ a {
 	}
 }
 
-.home .main-navigation a {
+.home .main-navigation a, .page-template-about .main-navigation a {
 	color: #fff;
 }
 
