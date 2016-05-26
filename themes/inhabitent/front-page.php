@@ -17,26 +17,34 @@ get_header(); ?>
 
 			<section class="product-posts">
 				<h2>Shop Stuff</h2>
+
 				<div class="container">
-					<?php $product_types = get_terms(
-						array( 'taxonomy' => 'product_type' ) );
+
+					<?php $product_types = get_terms('product_type' );
 					?>
+
 					<?php foreach( $product_types as $product_type) : ?>
+
 						<div class="product-type">
 							<?php echo "<img src='"
 										. get_stylesheet_directory_uri()
 										. "/images/product-type-icons/"
 							 			. $product_type->slug
-										. ".svg' alt='' />"?>
+										. ".svg' alt='' />";
+							?>
 							<p>
 								<?php echo $product_type->description; ?>
 							</p>
-							<a class="button-reverse" href="<?php home_url() ?>/product-type/<?php echo $product_type->slug ?>">
+
+							<a class="button-reverse" href="<?php echo get_term_link($product_type, 'product-type'); ?>">
 								<?php echo $product_type->name; ?> &nbsp;Stuff
 							</a>
+
 						</div>
+
 					<?php endforeach; ?>
-			 </div>
+
+			 </div> <!-- end product post container -->
 			</section>
 
 

@@ -319,6 +319,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.days {
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -449,8 +452,6 @@ textarea {
 a {
   color: #248A83;
   text-decoration: none; }
-  a:visited {
-    color: #248A83; }
   a:hover, a:focus, a:active {
     color: #2f1339; }
   a:focus {
@@ -1141,5 +1142,3 @@ h3.price {
     .site-footer .container .logo img {
       max-width: 50%;
       margin-top: 1rem; }
-  .site-footer .container span {
-    font-weight: bold; }
