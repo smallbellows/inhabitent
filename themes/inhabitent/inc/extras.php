@@ -74,7 +74,7 @@ add_action( 'wp_enqueue_scripts', 'inhabitent_about_header_css' );
 
 function inhabitent_filter_product_query( $query ) {
 
-	if ( is_post_type_archive('product') && !is_admin() && $query->is_main_query() ) {
+	if ( (is_post_type_archive('product') || is_tax('product_type') ) && !is_admin() && $query->is_main_query() ) {
 		$query->set( 'orderby', 'title' );
 		$query->set( 'order', 'ASC' );
 		$query->set( 'posts_per_page', 16 );

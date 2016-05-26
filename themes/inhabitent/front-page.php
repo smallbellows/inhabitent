@@ -31,7 +31,7 @@ get_header(); ?>
 							<p>
 								<?php echo $product_type->description; ?>
 							</p>
-							<a class="button-reverse">
+							<a class="button-reverse" href="<?php home_url() ?>/product-type/<?php echo $product_type->slug ?>">
 								<?php echo $product_type->name; ?> &nbsp;Stuff
 							</a>
 						</div>
@@ -54,10 +54,11 @@ get_header(); ?>
 			 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 				 <div class="journal-post">
 
-					 <?php if ( has_post_thumbnail() ) : ?>
-						 <?php the_post_thumbnail( 'large' ); ?>
-					 <?php endif; ?>
-
+					 <div class="journal-img-wrapper">
+						 <?php if ( has_post_thumbnail() ) : ?>
+							 <?php the_post_thumbnail( 'large' ); ?>
+						 <?php endif; ?>
+				 	</div>
 					<div class="post-data">
 			 				<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 

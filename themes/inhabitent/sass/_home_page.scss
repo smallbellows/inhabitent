@@ -67,9 +67,9 @@
   max-width: 32%;
   line-height: 0;
 
-  img {
-    width: 100%;
-    min-height: auto;
+  .journal-img-wrapper img {
+    min-height: 250px;
+    max-height: 250px;
   }
 }
 
@@ -81,8 +81,8 @@
   padding: 2%;
 
   h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: normal;
   line-height: 1;
   text-transform: uppercase;
   }

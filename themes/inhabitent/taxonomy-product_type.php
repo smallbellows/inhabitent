@@ -13,19 +13,20 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header-products">
-				<h1>Shop Stuff</h1>
+				<h1><?php single_term_title(); ?> </h1>
+        <?php echo term_description() ?>
 			</header><!-- .page-header -->
 				<div class="product-grid">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-
-
 					<div class="product-item">
 						<div class="product-image">
-							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'large' ); ?>
-							<?php endif; ?>
+              <a href=<?php the_permalink(); ?>>
+  							<?php if ( has_post_thumbnail() ) : ?>
+  								<?php the_post_thumbnail( 'large' ); ?>
+  							<?php endif; ?>
+              </a>
 						</div>
 						<div class="product-meta">
 							<?php the_title( sprintf( '<h2 class="product-name"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
