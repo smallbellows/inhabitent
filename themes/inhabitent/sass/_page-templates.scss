@@ -33,7 +33,7 @@
 
 /* Pages with SideBars */
 
-.blog, .single-post, .page-template-default {
+.blog, .single-post, .page-template-default:not(.home), .search-results {
 
   .site-content {
     width: 1120px;

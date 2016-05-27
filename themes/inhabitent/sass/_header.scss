@@ -40,3 +40,23 @@
     }
   }
 }
+
+.search-form fieldset {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.search-form input {
+  line-height: 1;
+}
+.search-submit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  border: 0;
+  background: transparent;
+  padding: 0;
+
+}

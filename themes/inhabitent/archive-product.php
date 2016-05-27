@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive of Product Custom Post Types.
+ * The template for displaying archive of Product Custom Post Type.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header-products">
+			<header class="cpt-archive-header">
 				<h1>Shop Stuff</h1>
 
 				<?php $product_types = get_terms(
@@ -23,14 +23,14 @@ get_header(); ?>
 
 				<?php foreach( $product_types as $product_type) : ?>
 					<li>
-							<a href="<?php home_url(); ?>/product-type/<?php echo $product_type->slug; ?>">
+							<a href="<?php echo get_term_link($product_type, 'product-type'); ?>">
 								<?php echo $product_type->name; ?>
 							</a>
 					</li>
 				<?php endforeach; ?>
 				</ul>
 			</header><!-- .page-header -->
-				<div class="product-grid">
+				<div class="cpt-grid">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
