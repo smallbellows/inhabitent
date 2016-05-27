@@ -127,3 +127,14 @@ function inhabitent_wp_trim_excerpt( $text ) {
 }
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'inhabitent_wp_trim_excerpt' );
+
+// Filter Product Archive Title
+
+function inhabitent_product_archive_title() {
+
+	if (is_post_type_archive('product') ) {
+		return $title = 'Shop Stuff';
+	}
+}
+
+add_filter( 'get_the_archive_title', 'inhabitent_product_archive_title');
