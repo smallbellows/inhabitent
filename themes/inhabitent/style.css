@@ -502,7 +502,8 @@ a {
   display: block;
   width: auto;
   font-family: "Novocento", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1rem; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -529,7 +530,7 @@ a {
   .main-navigation li {
     float: left;
     position: relative;
-    margin: 0 20px; }
+    margin: 0 1.5rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -863,19 +864,28 @@ object {
 .search-form fieldset {
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  border: none; }
 
 .search-form input {
-  line-height: 1; }
+  line-height: 1;
+  display: none; }
 
 .search-submit {
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: 0;
   background: transparent;
-  padding: 0; }
+  padding: 0;
+  color: #fff;
+  box-shadow: none;
+  line-height: 1.5; }
+  .search-submit:hover {
+    color: #f0e4d1;
+    border: none;
+    box-shadow: none; }
 
 .comments-area h2, .comments-area h3 {
   text-transform: uppercase; }

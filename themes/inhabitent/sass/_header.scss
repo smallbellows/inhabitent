@@ -41,22 +41,34 @@
   }
 }
 
+
+// Search Field in Header
 .search-form fieldset {
   margin: 0;
   padding: 0;
   position: relative;
+  border: none;
 }
 
 .search-form input {
   line-height: 1;
+  display: none;
 }
 .search-submit {
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: 0;
   background: transparent;
   padding: 0;
+  color: #fff;
+  box-shadow: none;
+  line-height: 1.5;
 
+  &:hover {
+    color: $color__brand-pale;
+    border: none;
+    box-shadow: none;
+  }
 }

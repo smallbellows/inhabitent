@@ -85,6 +85,7 @@ a {
 	width: auto;
 	font-family: $font__header;
 	text-transform: uppercase;
+	font-size: 1rem;
 
 	ul {
 		display: none;
@@ -133,7 +134,7 @@ a {
 	li {
 		float: left;
 		position: relative;
-		margin: 0 20px;
+		margin: 0 1.5rem;
 
 		&:hover > a,
 		&.focus > a {
