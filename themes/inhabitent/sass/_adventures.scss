@@ -24,14 +24,6 @@ $adventure_size: 1120px / 2 - 15px;
       z-index: 1;
     }
 
-    .adventure-info {
-      z-index: 3;
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 15px;
-
-    }
   .button {
 
     font-size: 1.2rem;
@@ -41,28 +33,14 @@ $adventure_size: 1120px / 2 - 15px;
 
 // create an overlay to darken the images
 .adventure-wrapper:after{
-    background: rgba(0,0,0,.35);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+
+    @include overlay;
 }
 
 .adventure-info h2 {
-  font-family: $font__main;
+
   font-size: 3rem;
-  font-weight: normal;
-
-  a {
-    color: white;
-
-    &:hover {
-      color: $color__brand-pale;
-    }
-  }
+  margin-bottom: 5%;
 }
 
 //single adventure pages

@@ -52,7 +52,6 @@ get_header(); ?>
 				<h2>Inhabitent Journal</h2>
 				<div class="container">
 
-
 				<?php
 			   $args = array( 'post_type' => 'post',
 											 	'posts_per_page' => 3);
@@ -78,46 +77,62 @@ get_header(); ?>
 			 </div>
 			</section>
 
+
+
 			<section class="adventure-posts">
-					<h2>Latest Adventures</h2>
 				<div class="container">
-				<?php $background_overlay="linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4))" ?>
 
-				<div class="outer left">
-					<div class="inner">
-						<div class="img" style="background: <?php echo $background_overlay; ?>, url(<?php echo bloginfo('url') ?>/htdocs/wp-content/themes/inhabitent/images/adventure-photos/canoe-girl.jpg) no-repeat 50% 50%; background-size: cover;">
-							<h3>Getting Back to Nature in a Canoe</h3>
-							<p class="read-more-white">Read More</p>
+				<?php
+			   $args = array( 'post_type' => 'adventure',
+											 	'posts_per_page' => 4);
+			   $adventure_posts = get_posts( $args ); // returns an array of posts
+			 ?>
+			 <!-- set a counter variable, to display the first post differently -->
+			 <?php $count = 0; ?>
+			 <?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+				 <?php if ($count === 0): ?>
+					 <div class="outer left">
+						 <div class="inner">
+							 <div class="adventure-image">
+								 <?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'full' ); ?>
+								<?php endif; ?>
+							 </div>
+
+
+							 <div class="adventure-info">
+								 <h3 class="adventure-entry"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></h3>
+ 								<a href="<?php the_permalink(); ?>" class="button transparent">Read More</a>
+							 </div>
+
+
 						</div>
-					</div>
-				</div>
-					<div class="outer right">
-						<div class="inner">
-							<div class="img" style="background:  <?php echo $background_overlay; ?>, url(<?php echo bloginfo('url') ?>/htdocs/wp-content/themes/inhabitent/images/adventure-photos/beach-bonfire.jpg) no-repeat 50% 50%; background-size: cover;">
-								<h3>A Night with Friends at the Beach</h3>
-								<p class="read-more-white">Read More</p>
+					 </div> <!-- end outer left (largest square adventure post)-->
+					 <div class="outer right">
+
+					 <?php else: ?>
+						 <div class="inner">
+
+							 <div class="adventure-image">
+								 <?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'full' ); ?>
+								<?php endif; ?>
+							 </div>
+
+							 <div class="adventure-info">
+								<h3 class="adventure-entry"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></h3>
+								 <a href="<?php the_permalink(); ?>" class="button transparent">Read More</a>
 							</div>
+
 						</div>
 
-						<div class="inner">
-							<div class="img" style="background:  <?php echo $background_overlay; ?>, url(<?php echo bloginfo('url') ?>/htdocs/wp-content/themes/inhabitent/images/adventure-photos/mountain-hikers.jpg) no-repeat 50% 50%; background-size: cover;">
-								<h3>Taking in the View at Big Mountain</h3>
-								<p class="read-more-white">Read More</p>
-							</div>
-						</div>
+				 <?php endif; ?>
+				 <?php $count++; ?>
+			 <?php endforeach; wp_reset_postdata();?>
 
-						<div class="inner">
-							<div class="img" style="background:  <?php echo $background_overlay; ?>, url(<?php echo bloginfo('url') ?>/htdocs/wp-content/themes/inhabitent/images/adventure-photos/night-sky.jpg) no-repeat 50% 50%; background-size: cover;">
-								<h3>Star-Gazing at the Night Sky</h3>
-								<p class="read-more-white">Read More</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-					<a href="#" class="button-reverse">More Adventures</a>
-			</section>  <!-- .adventure-posts -->
+		 			</div> <!-- end outer right (3 smaller adventure posts) -->
+				</div> <!-- end container -->
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
