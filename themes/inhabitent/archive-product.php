@@ -15,7 +15,6 @@ get_header(); ?>
 			<header class="cpt-archive-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
-
 				?>
 
 				<?php $product_types = get_terms(
