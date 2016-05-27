@@ -479,6 +479,10 @@ a {
 .button-reverse {
   color: white;
   background: #248A83; }
+  .button-reverse:hover {
+    color: white;
+    background: #1f7670;
+    border-color: #1f7670; }
 
 .read-more, .social-button {
   border-color: #000;
@@ -532,6 +536,8 @@ a {
 
 .home .main-navigation a, .page-template-about .main-navigation a, .single-adventure .main-navigation a {
   color: #fff; }
+  .home .main-navigation a:hover, .page-template-about .main-navigation a:hover, .single-adventure .main-navigation a:hover {
+    color: #f0e4d1; }
 
 /* Small menu. */
 .menu-toggle,
@@ -965,7 +971,7 @@ object {
 
 .adventure-posts {
   max-width: 1120px;
-  margin: 0 auto; }
+  margin: 40px auto; }
 
 .adventure-posts .container {
   display: -ms-flexbox;

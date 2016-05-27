@@ -50,6 +50,12 @@ a {
 	color: white;
 	background: $color__link;
 
+	&:hover {
+		color: white;
+		background: darken($color__link, 5%);
+		border-color: darken($color__link, 5%);
+	}
+
 }
 
 .read-more, .social-button {
@@ -148,6 +154,10 @@ a {
 
 	.main-navigation a{
 		color: #fff;
+
+		&:hover {
+			color: $color__brand_pale;
+		}
 	}
 
 }

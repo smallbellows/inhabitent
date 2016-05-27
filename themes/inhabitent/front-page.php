@@ -132,6 +132,8 @@ get_header(); ?>
 
 		 			</div> <!-- end outer right (3 smaller adventure posts) -->
 				</div> <!-- end container -->
+
+				<a href="<?php echo get_post_type_archive_link('adventure'); ?>" class="button-reverse">More Adventures</a>
 			</section>
 
 		</main><!-- #main -->
