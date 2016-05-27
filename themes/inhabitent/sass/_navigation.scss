@@ -34,7 +34,16 @@ a {
 	font-size: 0.9rem;
 }
 
+.transparent {
+	color: white;
+	border-color: white;
 
+	&:hover {
+		color: white;
+		background: $color__link;
+		border-color: $color__link;
+	}
+}
 
 .button-reverse {
 	@extend .button;
@@ -135,8 +144,12 @@ a {
 	}
 }
 
-.home .main-navigation a, .page-template-about .main-navigation a {
-	color: #fff;
+.home, .page-template-about, .single-adventure {
+
+	.main-navigation a{
+		color: #fff;
+	}
+
 }
 
 /* Small menu. */

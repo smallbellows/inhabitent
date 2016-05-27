@@ -468,6 +468,14 @@ a {
   font-family: "Novocento", sans-serif;
   font-size: 0.9rem; }
 
+.transparent {
+  color: white;
+  border-color: white; }
+  .transparent:hover {
+    color: white;
+    background: #248A83;
+    border-color: #248A83; }
+
 .button-reverse {
   color: white;
   background: #248A83; }
@@ -522,7 +530,7 @@ a {
     display: block;
     text-decoration: none; }
 
-.home .main-navigation a, .page-template-about .main-navigation a {
+.home .main-navigation a, .page-template-about .main-navigation a, .single-adventure .main-navigation a {
   color: #fff; }
 
 /* Small menu. */
@@ -798,7 +806,7 @@ object {
     font-size: 3rem; }
 
 /* Pages with SideBars */
-.blog .site-content, .single .site-content {
+.blog .site-content, .single-post .site-content, .page-template-default .site-content {
   width: 1120px;
   margin-left: auto;
   margin-right: auto;
@@ -807,12 +815,12 @@ object {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.blog .content-area, .single .content-area {
+.blog .content-area, .single-post .content-area, .page-template-default .content-area {
   width: 73%;
   margin-top: 30px;
   padding-right: 5%; }
 
-.blog .widget-area, .single .widget-area {
+.blog .widget-area, .single-post .widget-area, .page-template-default .widget-area {
   width: 25%;
   border-left: 1px solid #e1e1e1; }
 
@@ -835,14 +843,14 @@ object {
   overflow: hidden;
   text-indent: 100%; }
 
-.home .site-header, .page-template-about .site-header {
+.home .site-header, .page-template-about .site-header, .single-adventure .site-header {
   position: absolute;
   z-index: 3;
   background-color: transparent;
   width: 100%;
   border-bottom: none; }
 
-.home .site-branding h1, .page-template-about .site-branding h1 {
+.home .site-branding h1, .page-template-about .site-branding h1, .single-adventure .site-branding h1 {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: 50px 33px; }
 
@@ -1048,25 +1056,25 @@ h3.price {
   margin-top: 0; }
 
 /* Product Archive Pages */
-.page-header-products {
+.cpt-archive-header {
   text-align: center;
   border-bottom: 1px dashed #c8c8c8; }
-  .page-header-products h1 {
+  .cpt-archive-header h1 {
     text-transform: uppercase;
     margin-top: 30px; }
-  .page-header-products ul {
+  .cpt-archive-header ul {
     list-style: none;
     margin: 30px auto;
     padding: 0; }
-  .page-header-products li {
+  .cpt-archive-header li {
     display: inline;
     text-transform: uppercase; }
-    .page-header-products li a {
+    .cpt-archive-header li a {
       padding: 20px;
       font-family: "Novocento", sans-serif;
       font-size: 1.2rem; }
 
-.product-grid {
+.cpt-grid {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1075,14 +1083,14 @@ h3.price {
       justify-content: space-between;
   -ms-flex-line-pack: justify;
       align-content: space-between; }
-  .product-grid .product-item {
+  .cpt-grid .product-item {
     width: 24%;
     margin-top: 1%; }
-  .product-grid .product-image {
+  .cpt-grid .product-image {
     height: 250px;
     overflow: hidden;
     position: relative; }
-    .product-grid .product-image .wp-post-image {
+    .cpt-grid .product-image .wp-post-image {
       width: auto;
       max-width: none;
       height: 250px;
@@ -1091,7 +1099,7 @@ h3.price {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -52%); }
-  .product-grid .product-meta {
+  .cpt-grid .product-meta {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -1101,14 +1109,78 @@ h3.price {
     border: 1px solid #e1e1e1;
     border-top-width: 5px;
     padding: 5px 2px; }
-    .product-grid .product-meta h2 {
+    .cpt-grid .product-meta h2 {
       margin: 0; }
-    .product-grid .product-meta h2 a {
+    .cpt-grid .product-meta h2 a {
       font-weight: normal;
       color: black;
       font-family: "Merriweather", serif;
       font-size: 1rem;
       display: inline-block; }
+
+.adventure-grid {
+  margin: 50px auto;
+  width: 1120px; }
+
+.adventure-post {
+  min-width: 545px;
+  min-height: 545px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px; }
+  .adventure-post .wp-post-image {
+    width: auto;
+    max-width: none;
+    height: 545px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+  .adventure-post .adventure-info {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px; }
+  .adventure-post .button, .adventure-post .button-reverse, .adventure-post .read-more, .adventure-post .social-button, .adventure-post .read-more-white {
+    font-size: 1.2rem; }
+
+.adventure-wrapper:after {
+  background: rgba(0, 0, 0, 0.35);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+
+.adventure-info h2 {
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+  font-weight: normal; }
+  .adventure-info h2 a {
+    color: white; }
+    .adventure-info h2 a:hover {
+      color: #f0e4d1; }
+
+.adventure-header img {
+  width: 100%;
+  height: auto; }
+
+.adventure-container {
+  width: 800px;
+  margin: 20px auto; }
+
+.adventure-title {
+  font-weight: bold;
+  font-size: 3rem; }
+
+.entry-meta {
+  font-family: "Novocento", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
 
 .site-footer {
   background: url(../../images/dark-wood@2x.png); }

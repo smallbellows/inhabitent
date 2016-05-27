@@ -44,7 +44,7 @@ h3.price {
 
 /* Product Archive Pages */
 
-.page-header-products {
+.cpt-archive-header {
   text-align: center;
   border-bottom: $border__dashed;
 
@@ -73,7 +73,7 @@ h3.price {
 }
 
 
-.product-grid {
+.cpt-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
