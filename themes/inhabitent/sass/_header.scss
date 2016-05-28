@@ -40,24 +40,3 @@
     }
   }
 }
-
-
-// Search Field in Header
-
-.header-search fieldset {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  border: none;
-}
-
-  .header-search input {
-    line-height: 1;
-    display: none;
-    border: none;
-    background: transparent;
-
-    &::-webkit-input-placeholder {
-   color: $color__brand_pale;
-    }
-  }
