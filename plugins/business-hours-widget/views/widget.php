@@ -2,7 +2,7 @@
 
 <?php if ( strlen( trim($monday_friday) ) > 0 ) : ?>
 <p>
-  <span class="days">Monday to Friday:</span> <?php echo $monday_friday; ?>
+  <span class="days">Monday-Friday:</span> <?php echo $monday_friday; ?>
 </p>
 <?php endif; ?>
 
