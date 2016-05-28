@@ -31,9 +31,9 @@ get_header(); ?>
 	      	</div><!-- .entry-content -->
 
 					<div class="social-buttons">
-						<a href="#" class="social-button">Like</a>
-						<a href="#" class="social-button">Tweet</a>
-						<a href="#" class="social-button">Pin</a>
+						<a href="#" class="social-button"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
+						<a href="#" class="social-button"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
+						<a href="#" class="social-button"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
 					</div>
 				</div>
 

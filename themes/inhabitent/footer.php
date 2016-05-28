@@ -14,13 +14,17 @@
 					<div class="contact-info">
 						<h3>Contact Info</h3>
 						<p>
-							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
+							<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 						</p>
 						<p>
-							<a href="#">778-456-7891</a>
+							<i class="fa fa-phone" aria-hidden="true"></i> <a href="#">778-456-7891</a>
 						</p>
 						<p>
-							social media logos
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							&nbsp;
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							&nbsp;
+							<i class="fa fa-google-plus-square" aria-hidden="true"></i>
 						</p>
 					</div>
 					<div class="business-hours">

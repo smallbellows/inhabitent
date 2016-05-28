@@ -12,11 +12,11 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header-products">
-				<h1><?php single_term_title(); ?> </h1>
+			<header class="cpt-archive-header">
+				<h1 class="page-title"><?php single_term_title(); ?> </h1>
         <?php echo term_description() ?>
 			</header><!-- .page-header -->
-				<div class="product-grid">
+				<div class="cpt-grid">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

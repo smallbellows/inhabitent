@@ -389,32 +389,17 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  border: none;
+  background: #248A83;
+  color: #fff;
+  font-size: 14.4px;
+  font-size: 0.9rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+  padding: .75em 1.5em;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-family: "Novocento", sans-serif;
+  font-weight: normal; }
 
 /* Fields */
 input[type="text"],
@@ -424,8 +409,8 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 1px solid #e1e1e1;
+  background: #F4F4F4; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -444,6 +429,29 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+/* Labels */
+form p {
+  text-transform: uppercase;
+  font-family: "Novocento", sans-serif; }
+
+span.required {
+  color: #d99054; }
+
+/* Header Search */
+.header-search fieldset {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border: none; }
+
+.header-search input {
+  line-height: 1;
+  display: none;
+  border: none;
+  background: transparent; }
+  .header-search input::-webkit-input-placeholder {
+    color: #f0e4d1; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -647,6 +655,14 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget_archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.widget p {
+  margin-bottom: 0.5em; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -824,12 +840,14 @@ object {
 
 .blog .content-area, .single-post .content-area, .page-template-default:not(.home) .content-area, .search-results .content-area {
   width: 73%;
-  margin-top: 30px;
-  padding-right: 5%; }
+  padding-right: 5%;
+  border-right: 1px solid #e1e1e1;
+  padding-top: 40px; }
 
 .blog .widget-area, .single-post .widget-area, .page-template-default:not(.home) .widget-area, .search-results .widget-area {
   width: 25%;
-  border-left: 1px solid #e1e1e1; }
+  padding-top: 40px;
+  padding-left: 3%; }
 
 .site-header {
   padding: 15px 0;
@@ -860,20 +878,6 @@ object {
 .home .site-branding h1, .page-template-about .site-branding h1, .single-adventure .site-branding h1 {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: 50px 33px; }
-
-.header-search fieldset {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  border: none; }
-
-.header-search input {
-  line-height: 1;
-  display: none;
-  border: none;
-  background: transparent; }
-  .header-search input::-webkit-input-placeholder {
-    color: #f0e4d1; }
 
 .comments-area h2, .comments-area h3 {
   text-transform: uppercase; }
@@ -1073,9 +1077,6 @@ object {
 # Product CPT Styles
 --------------------------------------------------------------*/
 /* Single Product Pages */
-.single-product .content-area {
-  width: 100%; }
-
 .single-product article {
   display: -ms-flexbox;
   display: flex;
