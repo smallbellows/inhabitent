@@ -278,7 +278,8 @@ textarea {
 h1, .home h2, h2, h3, h4, h5, h6 {
   font-family: "Novocento", sans-serif;
   clear: both;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 h1, .home h2 {
   font-size: 2.4rem; }
@@ -461,13 +462,17 @@ span.required {
   position: relative;
   border: none; }
 
-.header-search input {
+.header-search input[type=search] {
   line-height: 1;
   display: none;
   border: none;
-  background: transparent; }
-  .header-search input::-webkit-input-placeholder {
-    color: #f0e4d1; }
+  background: transparent;
+  font-family: "Novocento", sans-serif;
+  color: #f0e4d1;
+  font-size: 1rem; }
+
+.header-search input::-webkit-input-placeholder {
+  color: #f0e4d1; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -486,7 +491,7 @@ a {
 /* Buttons */
 .button, .button-reverse, .read-more, .social-button, .read-more-white {
   border: 1px solid #248A83;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   width: auto;
   text-transform: uppercase;
   font-family: "Novocento", sans-serif;
@@ -554,7 +559,7 @@ a {
   .main-navigation li {
     float: left;
     position: relative;
-    margin: 0 1.5rem; }
+    margin: 0 1rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -718,7 +723,7 @@ a {
 .content-area {
   padding-bottom: 3rem; }
 
-/* Journal Page Contents */
+/* Journal Archive Contents */
 .blog .entry-header, .single .entry-header {
   position: relative; }
   .blog .entry-header img, .single .entry-header img {
@@ -727,15 +732,15 @@ a {
   .blog .entry-header .entry-title a, .blog .entry-header .entry-meta a, .single .entry-header .entry-title a, .single .entry-header .entry-meta a {
     color: #fff; }
   .blog .entry-header h1.entry-title, .blog .entry-header .home h2.entry-title, .home .blog .entry-header h2.entry-title, .blog .entry-header h2.entry-title, .single .entry-header h1.entry-title, .single .entry-header .home h2.entry-title, .home .single .entry-header h2.entry-title, .single .entry-header h2.entry-title {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     color: #fff;
     background: #248A83;
     position: absolute;
-    top: 5%;
+    top: 2.25rem;
     left: 0;
     text-transform: uppercase;
     max-width: 75%;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     line-height: 1.2; }
   .blog .entry-header .entry-meta, .single .entry-header .entry-meta {
     color: #fff;
@@ -1021,16 +1026,12 @@ object {
 .post-data {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
-  padding: 5%; }
+  padding: 10% 4%; }
   .post-data h3 {
-    font-size: 1.4rem;
-    font-weight: normal;
+    font-size: 1.3rem;
     line-height: 1;
-    text-transform: uppercase; }
-  .post-data .read-more:hover {
-    color: white;
-    background: #248A83;
-    border-color: #248A83; }
+    text-transform: uppercase;
+    padding-bottom: 0.5rem; }
 
 .adventure-posts {
   max-width: 1120px;
@@ -1050,13 +1051,15 @@ object {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 5%;
   z-index: 3;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  padding: 5%; }
+  .adventure-info h2 {
+    font-size: 3rem; }
   .adventure-info h3 {
     font-size: 2.5rem; }
   .adventure-info h3, .adventure-info h2 {
-    margin: 0;
+    margin: 5% 0;
     line-height: 1;
     text-transform: capitalize; }
   .adventure-info h3 a, .adventure-info h2 a {
@@ -1120,7 +1123,6 @@ object {
         line-height: 1; }
 
 .adventure-posts .button-reverse {
-  padding: 5px;
   font-size: 1.3rem; }
 
 .adventure-image:after {
@@ -1174,7 +1176,8 @@ h3.price {
 /* Product Archive Pages */
 .cpt-archive-header {
   text-align: center;
-  border-bottom: 1px dashed #c8c8c8; }
+  border-bottom: 1px dashed #c8c8c8;
+  padding: 2rem; }
   .cpt-archive-header h1, .cpt-archive-header .home h2, .home .cpt-archive-header h2 {
     text-transform: uppercase;
     margin-top: 30px; }
@@ -1203,7 +1206,7 @@ h3.price {
   margin-bottom: 1.5rem; }
   .cpt-grid .product-item {
     width: 24%;
-    margin-top: 1%; }
+    margin-top: 1.5em; }
   .cpt-grid .product-image {
     height: 250px;
     overflow: hidden;
@@ -1226,8 +1229,9 @@ h3.price {
         align-items: center;
     border: 1px solid #e1e1e1;
     border-top-width: 5px;
-    padding: 20px 2px;
-    margin-top: 0; }
+    padding: 20px 0;
+    margin-top: 0;
+    overflow: hidden; }
     .cpt-grid .product-meta h2 {
       margin: 0;
       padding: 0;
@@ -1244,9 +1248,13 @@ h3.price {
       color: black;
       font-family: "Merriweather", serif;
       display: inline;
-      line-height: 1; }
-    .cpt-grid .product-meta h2 a, .cpt-grid .product-meta span {
+      line-height: 1;
+      letter-spacing: normal;
+      padding-left: 1rem;
       background: #fff; }
+    .cpt-grid .product-meta span {
+      background: #fff;
+      padding-right: 1rem; }
 
 .adventure-grid {
   margin: 50px auto;
@@ -1279,10 +1287,6 @@ h3.price {
   top: 0;
   width: 100%;
   z-index: 2; }
-
-.adventure-info h2 {
-  font-size: 3rem;
-  margin-bottom: 5%; }
 
 .adventure-header img {
   width: 100%;

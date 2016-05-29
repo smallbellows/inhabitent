@@ -76,20 +76,15 @@
 .post-data {
   border: $border__solid;
   border-top-width: 5px;
-  padding: 5%;
+  padding: 10% 4%;
 
   h3 {
-  font-size: 1.4rem;
-  font-weight: normal;
+  font-size: 1.3rem;
   line-height: 1;
   text-transform: uppercase;
+  padding-bottom: 0.5rem;
   }
 
-  .read-more:hover {
-    color: white;
-    background: $color__brand-main;
-    border-color: $color__brand-main;
-  }
 }
 
 //Adventure Posts Product Types
@@ -108,23 +103,24 @@
   height: 560px;
   margin: 25px auto 50px auto;
 
-
-
 }
 
 .adventure-info {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 5%;
   z-index: 3;
   font-size: 2.5rem;
+  padding: 5%;
 
+  h2 {
+    font-size: 3rem;
+  }
   h3 {
     font-size: 2.5rem;
   }
   h3, h2 {
-    margin: 0;
+    margin: 5% 0;
     line-height: 1;
     text-transform: capitalize;
   }
@@ -216,7 +212,6 @@
 
 .adventure-posts .button-reverse {
 
-  padding: 5px;
   font-size: 1.3rem;
 
 }

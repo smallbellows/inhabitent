@@ -77,13 +77,17 @@ span.required {
   border: none;
 }
 
-  .header-search input {
+  .header-search input[type=search] {
     line-height: 1;
     display: none;
     border: none;
     background: transparent;
+		font-family: $font__header;
+		color: $color__brand-pale;
+		font-size: 1rem;
 
-    &::-webkit-input-placeholder {
-   color: $color__brand_pale;
-    }
   }
+
+	.header-search input::-webkit-input-placeholder {
+		color: $color__brand_pale;
+	}

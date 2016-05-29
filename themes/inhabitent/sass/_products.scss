@@ -44,6 +44,7 @@ h3.price {
 .cpt-archive-header {
   text-align: center;
   border-bottom: $border__dashed;
+  padding: 2rem;
 
   h1 {
     text-transform: uppercase;
@@ -80,7 +81,7 @@ h3.price {
 
   .product-item {
     width: 24%;
-    margin-top: 1%;
+    margin-top: $base__space-unit;
   }
 
   .product-image {
@@ -109,8 +110,9 @@ h3.price {
     align-items: center;
     border: $border__solid;
     border-top-width: 5px;
-    padding: 20px 2px;
+    padding: 20px 0;
     margin-top: 0;
+    overflow: hidden;
 
 
     h2 {
@@ -119,6 +121,7 @@ h3.price {
       text-transform: capitalize;
       font-size: 1rem;
       display: inline;
+
 
       &:before {
         float: left;
@@ -133,10 +136,14 @@ h3.price {
       font-family: $font__main;
       display: inline;
       line-height: 1;
+      letter-spacing: normal;
+      padding-left: 1rem;
+      background: #fff;
     }
 
-    h2 a, span {
+    span{
       background: #fff;
+      padding-right: 1rem;
     }
   }
 }

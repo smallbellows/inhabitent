@@ -83,6 +83,17 @@ function inhabitent_filter_product_query( $query ) {
 
 add_action( 'pre_get_posts', 'inhabitent_filter_product_query' );
 
+function inhabitent_filter_adventure_query ( $query ) {
+
+	if ( is_post_type_archive('adventure')  && !is_admin() && $query->is_main_query() ) {
+
+		$query->set( 'order', 'ASC' );
+		$query->set( 'posts_per_page', 4 );
+	}
+
+}
+
+add_action( 'pre_get_posts', 'inhabitent_filter_adventure_query' );
 
 // Custom Excerpt Length
 
@@ -128,7 +139,7 @@ function inhabitent_wp_trim_excerpt( $text ) {
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'inhabitent_wp_trim_excerpt' );
 
-// Filter Product Archive Title
+// Filter CPT Archive Titles
 
 function inhabitent_cpt_archive_title() {
 

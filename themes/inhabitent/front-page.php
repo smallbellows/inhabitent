@@ -70,6 +70,7 @@ get_header(); ?>
 			 				<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 
 							<?php the_title( sprintf( '<h3><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+							<a href="<?php the_permalink(); ?>" class="read-more">Read Entry</a>
 			 		</div>
 
 				 </div>
@@ -84,6 +85,7 @@ get_header(); ?>
 
 				<?php
 			   $args = array( 'post_type' => 'adventure',
+				 								'order' => 'ASC',
 											 	'posts_per_page' => 4);
 			   $adventure_posts = get_posts( $args ); // returns an array of posts
 			 ?>
