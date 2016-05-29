@@ -447,7 +447,7 @@ textarea {
   width: 100%; }
 
 /* Labels */
-form p {
+form label, .wpcf7-form p {
   text-transform: uppercase;
   font-family: "Novocento", sans-serif; }
 
@@ -951,7 +951,7 @@ object {
 .comment-form label {
   display: block; }
 
-.comment-form input {
+.comment-form input[type=text], .comment-form input[type=email], .comment-form input[type=url] {
   width: 100%; }
 
 .comment-form-author, .comment-form-email {

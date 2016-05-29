@@ -59,7 +59,7 @@ textarea {
 
 /* Labels */
 
-form p{
+form label, .wpcf7-form p{
 	text-transform: uppercase;
 	font-family: $font__header;
 }
