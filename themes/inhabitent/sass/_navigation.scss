@@ -151,18 +151,6 @@ a {
 	}
 }
 
-.home, .page-template-about, .single-adventure {
-
-	.main-navigation a{
-		color: #fff;
-
-		&:hover {
-			color: $color__brand_pale;
-		}
-	}
-
-}
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {

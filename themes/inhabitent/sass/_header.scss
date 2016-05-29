@@ -1,8 +1,28 @@
 
-.site-header {
-
+@mixin transparent-header {
   padding: 15px 0;
   border-bottom: $border__solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.5);
+  z-index: 10;
+}
+
+@mixin transparent-header-h1 {
+  height: 33px;
+  width: 50px;
+  margin: 0;
+  background: url('../../images/logos/inhabitent-logo-tent.svg') no-repeat;
+  background-size: 50px 33px;
+  overflow: hidden;
+  text-indent: 100%;
+}
+
+
+.site-header {
+
+  @include transparent-header;
 }
 
 .site-header .container {
@@ -23,6 +43,7 @@
   }
 }
 
+
 .home, .page-template-about, .single-adventure {
   .site-header  {
     position: absolute;
@@ -39,4 +60,34 @@
       background-size: 50px 33px;
     }
   }
+
+
+
+  .transparent-header {
+    @include transparent-header;
+
+    h1 {
+      @include transparent-header-h1;
+    }
+
+    .main-navigation a {
+      color: $color__link;
+
+      &:hover {
+        color: $color__link-hover;
+      }
+    }
+  }
+}
+
+.home, .page-template-about, .single-adventure {
+
+  .main-navigation a{
+    color: #fff;
+
+    &:hover {
+      color: $color__brand_pale;
+    }
+  }
+
 }

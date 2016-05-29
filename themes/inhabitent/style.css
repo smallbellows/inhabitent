@@ -564,11 +564,6 @@ a {
     display: block;
     text-decoration: none; }
 
-.home .main-navigation a, .page-template-about .main-navigation a, .single-adventure .main-navigation a {
-  color: #fff; }
-  .home .main-navigation a:hover, .page-template-about .main-navigation a:hover, .single-adventure .main-navigation a:hover {
-    color: #f0e4d1; }
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -893,7 +888,8 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  margin-top: 63px; }
 
 .blog .content-area, .single-post .content-area, .page-template-default:not(.home) .content-area, .search-results .content-area, .error404 .content-area {
   width: 73%;
@@ -906,9 +902,18 @@ object {
   padding-top: 40px;
   padding-left: 3%; }
 
+/* Pages with out a sidebar and without a header image */
+.post-type-archive .site-content {
+  margin-top: 63px; }
+
 .site-header {
   padding: 15px 0;
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 10; }
 
 .site-header .container {
   display: -ms-flexbox;
@@ -935,6 +940,32 @@ object {
 .home .site-branding h1, .home .site-branding h2, .page-template-about .site-branding h1, .page-template-about .site-branding .home h2, .home .page-template-about .site-branding h2, .single-adventure .site-branding h1, .single-adventure .site-branding .home h2, .home .single-adventure .site-branding h2 {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: 50px 33px; }
+
+.home .transparent-header, .page-template-about .transparent-header, .single-adventure .transparent-header {
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 10; }
+  .home .transparent-header h1, .home .transparent-header h2, .page-template-about .transparent-header h1, .page-template-about .transparent-header .home h2, .home .page-template-about .transparent-header h2, .single-adventure .transparent-header h1, .single-adventure .transparent-header .home h2, .home .single-adventure .transparent-header h2 {
+    height: 33px;
+    width: 50px;
+    margin: 0;
+    background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+    background-size: 50px 33px;
+    overflow: hidden;
+    text-indent: 100%; }
+  .home .transparent-header .main-navigation a, .page-template-about .transparent-header .main-navigation a, .single-adventure .transparent-header .main-navigation a {
+    color: #248A83; }
+    .home .transparent-header .main-navigation a:hover, .page-template-about .transparent-header .main-navigation a:hover, .single-adventure .transparent-header .main-navigation a:hover {
+      color: #2f1339; }
+
+.home .main-navigation a, .page-template-about .main-navigation a, .single-adventure .main-navigation a {
+  color: #fff; }
+  .home .main-navigation a:hover, .page-template-about .main-navigation a:hover, .single-adventure .main-navigation a:hover {
+    color: #f0e4d1; }
 
 .comments-area h2, .comments-area h3 {
   text-transform: uppercase; }

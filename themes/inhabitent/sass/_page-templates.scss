@@ -64,7 +64,7 @@
     margin-right: auto;
     display: flex;
     justify-content: space-between;
-
+    margin-top: 63px;
 
   }
 
@@ -81,4 +81,12 @@
      padding-left: 3%
    }
 
+}
+
+/* Pages with out a sidebar and without a header image */
+
+.post-type-archive {
+  .site-content {
+    margin-top: 63px;
+  }
 }

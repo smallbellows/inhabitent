@@ -1,8 +1,7 @@
-//
+// This function shows and hides a search field in the header of all pages
 
 jQuery(document).ready(function($) {
 
-  // show the header search on click
 
   $('.toggle-search').on('click', function() {
 
@@ -10,5 +9,6 @@ jQuery(document).ready(function($) {
     $input.toggle('slow');
 
   });
+
 
 });
