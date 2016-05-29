@@ -75,6 +75,8 @@ h3.price {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 
   .product-item {
     width: 24%;
@@ -86,6 +88,8 @@ h3.price {
       overflow: hidden;
       position: relative;
 
+
+
       .wp-post-image {
         width: auto;
         max-width: none;
@@ -94,7 +98,7 @@ h3.price {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -52%);
+        transform: translate(-50%, -50%);
       }
     }
 
@@ -105,17 +109,34 @@ h3.price {
     align-items: center;
     border: $border__solid;
     border-top-width: 5px;
-    padding: 5px 2px;
+    padding: 20px 2px;
+    margin-top: 0;
+
 
     h2 {
       margin: 0;
+      padding: 0;
+      text-transform: capitalize;
+      font-size: 1rem;
+      display: inline;
+
+      &:before {
+        float: left;
+        white-space: nowrap;
+        content: '.....................................................';
+        width: 0;
+      }
     }
     h2 a {
       font-weight: normal;
       color: black;
       font-family: $font__main;
-      font-size: 1rem;
-      display: inline-block;
+      display: inline;
+      line-height: 1;
+    }
+
+    h2 a, span {
+      background: #fff;
     }
   }
 }

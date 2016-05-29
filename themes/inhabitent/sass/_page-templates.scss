@@ -31,6 +31,15 @@
   }
 }
 
+.page-template-about .entry-content {
+  width: 800px;
+  margin: 3rem auto;
+
+  h2 {
+    text-align: center;
+  }
+}
+
 /* Pages with SideBars */
 
 .blog, .single-post, .page-template-default:not(.home), .search-results {
