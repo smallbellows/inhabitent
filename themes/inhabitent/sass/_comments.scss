@@ -3,6 +3,11 @@
   h2, h3 {
     text-transform: uppercase;
   }
+
+  ol {
+  	margin: 0;
+  	padding: 0;
+  }
 }
 
 .comment-body {
@@ -27,4 +32,27 @@
 
 .avatar {
   border-radius: 50%;
+}
+
+
+.comment-form {
+  label {
+    display: block;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+.comment-form-author, .comment-form-email {
+  width: 49%;
+  float: left;
+}
+
+.comment-form-email {
+  margin-left: 2%;
+}
+
+.comment-form-url {
+  width: 100%;
 }
