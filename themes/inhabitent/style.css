@@ -876,8 +876,17 @@ object {
   .page-template-about .entry-content h2 {
     text-align: center; }
 
+/* 404 Page */
+.error404 fieldset {
+  border: none; }
+
+.error404 ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+
 /* Pages with SideBars */
-.blog .site-content, .single-post .site-content, .page-template-default:not(.home) .site-content, .search-results .site-content {
+.blog .site-content, .single-post .site-content, .page-template-default:not(.home) .site-content, .search-results .site-content, .error404 .site-content {
   width: 1120px;
   margin-left: auto;
   margin-right: auto;
@@ -886,13 +895,13 @@ object {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.blog .content-area, .single-post .content-area, .page-template-default:not(.home) .content-area, .search-results .content-area {
+.blog .content-area, .single-post .content-area, .page-template-default:not(.home) .content-area, .search-results .content-area, .error404 .content-area {
   width: 73%;
   padding-right: 5%;
   border-right: 1px solid #e1e1e1;
   padding-top: 40px; }
 
-.blog .widget-area, .single-post .widget-area, .page-template-default:not(.home) .widget-area, .search-results .widget-area {
+.blog .widget-area, .single-post .widget-area, .page-template-default:not(.home) .widget-area, .search-results .widget-area, .error404 .widget-area {
   width: 25%;
   padding-top: 40px;
   padding-left: 3%; }

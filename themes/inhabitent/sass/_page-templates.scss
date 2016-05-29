@@ -40,9 +40,23 @@
   }
 }
 
+/* 404 Page */
+
+.error404 {
+  fieldset {
+    border: none;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
 /* Pages with SideBars */
 
-.blog, .single-post, .page-template-default:not(.home), .search-results {
+.blog, .single-post, .page-template-default:not(.home), .search-results, .error404 {
 
   .site-content {
     width: 1120px;
