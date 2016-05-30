@@ -1,5 +1,5 @@
-# RED Widget Boilerplate
+# Business Hours Widget
 
-A template for a WordPress widget plugin for RED Academy students.
+Based on a template for a WordPress widget plugin for RED Academy students.
 
 Lightly forked from the [WordPress Widget Boilerplate](https://github.com/tommcfarlin/WordPress-Widget-Boilerplate) by [@tommcfarlin](https://github.com/tommcfarlin).

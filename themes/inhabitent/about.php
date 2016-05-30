@@ -2,7 +2,7 @@
 /**
  * The template for displaying the About page.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  * Template Name: About Template
  */
 

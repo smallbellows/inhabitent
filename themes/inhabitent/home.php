@@ -2,7 +2,7 @@
 /**
  * The main blog posts file.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>

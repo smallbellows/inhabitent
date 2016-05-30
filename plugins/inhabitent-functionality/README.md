@@ -1,3 +1,3 @@
-# RED Functionality Plugin
+# Inhabitent Functionality Plugin
 
-A template for a WordPress functionality plugin for RED Academy students.
+Based on the RED Functionality Plugin template for a WordPress functionality plugin for RED Academy students.

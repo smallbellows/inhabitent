@@ -906,6 +906,9 @@ object {
 .post-type-archive .site-content {
   margin-top: 63px; }
 
+/*--------------------------------------------------------------
+# Site Header
+--------------------------------------------------------------*/
 .site-header {
   padding: 15px 0;
   border-bottom: 1px solid #e1e1e1;

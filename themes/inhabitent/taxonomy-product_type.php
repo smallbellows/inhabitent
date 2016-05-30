@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive of Product Custom Post Types.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
