@@ -25,6 +25,7 @@
   }
 }
 
+// Header on pages that have full-screen hero images
 
 .home, .page-template-about, .single-adventure {
   .site-header  {
@@ -72,7 +73,7 @@
 
 }
 
-// move site header below admin bar when logged in
+// move site header below admin bar when logged in, toggled in js/header-scroll.js
 
 .logged-in .site-header {
   top: 20px;

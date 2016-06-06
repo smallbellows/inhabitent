@@ -2,18 +2,6 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
-
-.header-hero {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url(../../images/home-hero.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* About Page */
 
@@ -37,20 +25,6 @@
 
   h2 {
     text-align: center;
-  }
-}
-
-/* 404 Page */
-
-.error404 {
-  fieldset {
-    border: none;
-  }
-
-  ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
   }
 }
 
@@ -88,5 +62,21 @@
 .post-type-archive {
   .site-content {
     margin-top: 63px;
+  }
+}
+
+
+/* 404 Page */
+
+.error404 {
+
+  fieldset {
+    border: none;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
   }
 }

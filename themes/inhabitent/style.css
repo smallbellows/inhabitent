@@ -875,32 +875,35 @@ object {
   .blog .entry-header img, .single .entry-header img {
     height: auto;
     width: 100%; }
-  .blog .entry-header .entry-title a, .blog .entry-header .entry-meta a, .single .entry-header .entry-title a, .single .entry-header .entry-meta a {
-    color: #fff; }
-  .blog .entry-header h1.entry-title, .blog .entry-header .home h2.entry-title, .home .blog .entry-header h2.entry-title, .blog .entry-header h2.entry-title, .single .entry-header h1.entry-title, .single .entry-header .home h2.entry-title, .home .single .entry-header h2.entry-title, .single .entry-header h2.entry-title {
-    font-size: 2.1rem;
-    color: #fff;
-    background: #248A83;
-    position: absolute;
-    top: 2.25rem;
-    left: 0;
-    text-transform: uppercase;
-    max-width: 75%;
-    padding: 0.75rem 1.5rem;
-    line-height: 1.2; }
-  .blog .entry-header .entry-meta, .single .entry-header .entry-meta {
-    color: #fff;
-    background: #248A83;
-    position: absolute;
-    bottom: 8px;
-    right: 0;
-    text-transform: uppercase;
-    font-family: "Novocento", sans-serif;
-    padding: 0.3rem 1rem;
-    font-size: 0.9rem; }
 
 .blog .entry-content {
   margin-bottom: 4rem; }
+
+.blog .entry-title a, .blog .entry-meta a, .single-post .entry-title a, .single-post .entry-meta a {
+  color: #fff; }
+
+.blog h1.entry-title, .blog .home h2.entry-title, .home .blog h2.entry-title, .blog h2.entry-title, .single-post h1.entry-title, .single-post .home h2.entry-title, .home .single-post h2.entry-title, .single-post h2.entry-title {
+  font-size: 2.1rem;
+  color: #fff;
+  background: #248A83;
+  position: absolute;
+  top: 2.25rem;
+  left: 0;
+  text-transform: uppercase;
+  max-width: 75%;
+  padding: 0.75rem 1.5rem;
+  line-height: 1.2; }
+
+.blog .entry-meta, .single-post .entry-meta {
+  color: #fff;
+  background: #248A83;
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  text-transform: uppercase;
+  font-family: "Novocento", sans-serif;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem; }
 
 .cat-links, .tags-links {
   font-family: "Novocento", sans-serif;
@@ -945,26 +948,9 @@ object {
   line-height: 2;
   margin-right: 0.5rem; }
 
-/* Social Media Buttons */
-.social-buttons {
-  margin-top: 1.5em; }
-
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-.header-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
 /* About Page */
 .about-header {
   width: 100%;
@@ -985,15 +971,6 @@ object {
   margin: 3rem auto; }
   .page-template-about .entry-content h2 {
     text-align: center; }
-
-/* 404 Page */
-.error404 fieldset {
-  border: none; }
-
-.error404 ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0; }
 
 /* Pages with SideBars */
 .blog .site-content, .single-post .site-content, .page-template-default:not(.home) .site-content, .search-results .site-content, .error404 .site-content {
@@ -1021,9 +998,30 @@ object {
 .post-type-archive .site-content {
   margin-top: 63px; }
 
+/* 404 Page */
+.error404 fieldset {
+  border: none; }
+
+.error404 ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+
 /*--------------------------------------------------------------
-# Home Page 
+# Home Page
 --------------------------------------------------------------*/
+.header-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .home h2 {
   text-transform: uppercase;
   text-align: center;
@@ -1113,7 +1111,7 @@ object {
     font-size: 3rem; }
   .adventure-info h3 {
     font-size: 2.5rem; }
-  .adventure-info h3, .adventure-info h2 {
+  .adventure-info h2, .adventure-info h3 {
     margin: 5% 0;
     line-height: 1;
     text-transform: capitalize; }
@@ -1201,18 +1199,18 @@ object {
 --------------------------------------------------------------*/
 .adventure-grid {
   margin: 50px auto;
-  width: 1120px; }
+  width: 1160px; }
 
 .adventure-post {
-  min-width: 545px;
-  min-height: 545px;
+  min-width: 565px;
+  min-height: 565px;
   overflow: hidden;
   position: relative;
   margin-bottom: 30px; }
   .adventure-post .wp-post-image {
     width: auto;
     max-width: none;
-    height: 545px;
+    height: 565px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1243,7 +1241,7 @@ object {
   font-weight: bold;
   font-size: 3rem; }
 
-.entry-meta {
+.single-adventure .entry-meta {
   font-family: "Novocento", sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem; }

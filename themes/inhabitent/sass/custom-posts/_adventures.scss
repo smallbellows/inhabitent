@@ -3,11 +3,11 @@
 --------------------------------------------------------------*/
 
 
-$adventure_size: 1120px / 2 - 15px;
+$adventure_size: $container__wide / 2 - 15px;
 
 .adventure-grid {
   margin: 50px auto;
-  width: 1120px;
+  width: $container__wide;
 }
 
 .adventure-post {
@@ -45,27 +45,26 @@ $adventure_size: 1120px / 2 - 15px;
 
 //single adventure pages
 
-
 .adventure-header {
 
   img {
     width: 100%;
     height: auto;
     }
-  }
+}
 
-  .adventure-container {
-    width: 800px;
-    margin: 20px auto;
-  }
+.adventure-container {
+  width: $container__narrow;
+  margin: 20px auto;
+}
 
-  .adventure-title {
-    font-weight: bold;
-    font-size: 3rem;
-  }
+.adventure-title {
+  font-weight: bold;
+  font-size: 3rem;
+}
 
-  .entry-meta {
-    font-family: $font__header;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-  }
+.single-adventure .entry-meta {
+  font-family: $font__header;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
