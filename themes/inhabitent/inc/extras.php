@@ -33,7 +33,24 @@ add_action( 'admin_init', 'inhabitent_remove_submenus', 102 );
 // Customize the wp-admin login area
 
 function inhabitent_custom_login() {
-	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/customlogin.css" />';
+	echo '<style type="text/css">
+					.login h1 a{
+						width: 100%;
+						background-image: url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important; 
+						background-size: contain;
+					}
+
+					.wp-core-ui .button-primary
+					 {
+						background-color: #248A83;
+						border: #248A83;
+					}
+
+					.wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
+						background-color: #248A83;
+						border: #248A83;
+					}
+				</style>';
 }
 
 add_action('login_head', 'inhabitent_custom_login');

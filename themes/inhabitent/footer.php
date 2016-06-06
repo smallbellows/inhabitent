@@ -40,7 +40,7 @@
 						</p>
 					</div>
 					<div class="logo">
-						<img src="<?php echo home_url(); ?>/htdocs/wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg" alt="" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="" />
 					</div>
 				</div>
 				<div class="site-info">

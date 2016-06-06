@@ -18,10 +18,7 @@ get_header(); ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         	<div class="entry-content">
-        		<?php the_content(); ?>
-
-
-              <h2 class="about-subtitle">
+        		<h2 class="about-subtitle">
                 <?php $story = CFS()->get_field_info( 'our_story' );
                       echo $story['label']; ?>
               </h2>

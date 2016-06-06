@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main about" role="main">
 
 			<section class="header-hero">
-	      <img src="<?php echo bloginfo('url') ?>/htdocs/wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg" alt="" />
+	      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="" />
 	    </section>
 
 			<section class="product-posts">
@@ -26,12 +26,8 @@ get_header(); ?>
 					<?php foreach( $product_types as $product_type) : ?>
 
 						<div class="product-type">
-							<?php echo "<img src='"
-										. get_stylesheet_directory_uri()
-										. "/images/product-type-icons/"
-							 			. $product_type->slug
-										. ".svg' alt='' />";
-							?>
+							<img src='<?php echo get_stylesheet_directory_uri(); ?>/images/product-type-icons/<?php echo $product_type->slug; ?>.svg' alt='' />
+
 							<p>
 								<?php echo $product_type->description; ?>
 							</p>
