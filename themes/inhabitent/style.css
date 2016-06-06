@@ -469,10 +469,13 @@ span.required {
   border: none;
   background: transparent;
   font-family: "Novocento", sans-serif;
-  color: #f0e4d1;
+  color: #248A83;
   font-size: 1rem; }
 
 .header-search input::-webkit-input-placeholder {
+  color: #248A83; }
+
+.home .header-search input[type=search], .home .header-search input::-webkit-input-placeholder, .page-template-about .header-search input[type=search], .page-template-about .header-search input::-webkit-input-placeholder, .single-adventure .header-search input[type=search], .single-adventure .header-search input::-webkit-input-placeholder {
   color: #f0e4d1; }
 
 /*--------------------------------------------------------------

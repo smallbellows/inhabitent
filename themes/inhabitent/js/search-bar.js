@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
 
     $input = $('input.header');
     $input.toggle('slow');
+    $input.focus();
 
   });
 
