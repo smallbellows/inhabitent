@@ -192,3 +192,31 @@ a {
 		width: 50%;
 	}
 }
+
+.search-pagination {
+
+	border-top: $border__solid;
+	font-family: $font__header;
+	text-transform: uppercase;
+	padding: 1.5rem 0;
+}
+
+.page-numbers {
+	background: $color__brand-main;
+	color: white;
+	display: inline-block;
+	padding: 0.5rem 0.75rem;
+	line-height: 1;
+	text-align: center;
+	margin-right: 0.25rem;
+
+	&:hover {
+		background: $color__link-hover;
+		color: white;
+	}
+
+}
+
+.page-numbers.current {
+	background: gray;
+}

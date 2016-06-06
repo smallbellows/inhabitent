@@ -598,6 +598,27 @@ a {
   text-align: right;
   width: 50%; }
 
+.search-pagination {
+  border-top: 1px solid #e1e1e1;
+  font-family: "Novocento", sans-serif;
+  text-transform: uppercase;
+  padding: 1.5rem 0; }
+
+.page-numbers {
+  background: #248A83;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  line-height: 1;
+  text-align: center;
+  margin-right: 0.25rem; }
+  .page-numbers:hover {
+    background: #2f1339;
+    color: white; }
+
+.page-numbers.current {
+  background: gray; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -935,6 +956,9 @@ object {
   margin: 0;
   padding: 0; }
 
+.widget h2 {
+  font-size: 1.5rem; }
+
 .widget p {
   margin-bottom: 0.5em; }
 
@@ -1006,6 +1030,13 @@ object {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
+
+/* Search Page */
+.search .page-header {
+  border-bottom: 1px solid #e1e1e1; }
+
+.hentry {
+  margin: 0 0 4.5em; }
 
 /*--------------------------------------------------------------
 # Home Page
