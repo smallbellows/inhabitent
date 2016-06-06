@@ -35,6 +35,12 @@ function inhabitent_setup() {
 		'caption',
 	) );
 
+	// Set up the WordPress core custom background feature.
+	add_theme_support( 'custom-background', apply_filters( 'simres_custom_background_args', array(
+		'default-color' => 'ffffff',
+		'default-image' => '',
+	) ) );
+
 }
 endif; // inhabitent_setup
 add_action( 'after_setup_theme', 'inhabitent_setup' );
@@ -84,7 +90,7 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
  */
 function inhabitent_scripts() {
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
-	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css');
 
 	wp_enqueue_script('jquery');
 

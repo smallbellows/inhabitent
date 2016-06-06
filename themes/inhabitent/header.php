@@ -24,7 +24,7 @@
 				<div class="container">
 					<div class="site-branding">
 						<div class="logo">
-							<a href="<?php echo bloginfo('url');?>">
+							<a href="<?php echo esc_url( home_url() );?>">
 								<h1 class="site-title">
 									<?php echo bloginfo('name'); ?>
 								</h1>
