@@ -285,6 +285,7 @@ h1, .home h2 {
   font-size: 2.4rem; }
 
 h2 {
+  color: #2f1339;
   font-size: 2.1rem; }
 
 .widget h2 {
@@ -808,7 +809,7 @@ object {
     color: #f0e4d1; }
 
 .logged-in .site-header {
-  top: 20px; }
+  top: 31px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -997,7 +998,7 @@ object {
     text-align: center; }
 
 /* Pages with SideBars */
-.blog .site-content, .single-post .site-content, .page-template-default:not(.home) .site-content, .search-results .site-content, .error404 .site-content {
+.blog .site-content, .single-post .site-content, .page-template-default:not(.home) .site-content, .search .site-content, .error404 .site-content {
   width: 1120px;
   margin-left: auto;
   margin-right: auto;
@@ -1007,13 +1008,13 @@ object {
       justify-content: space-between;
   margin-top: 63px; }
 
-.blog .content-area, .single-post .content-area, .page-template-default:not(.home) .content-area, .search-results .content-area, .error404 .content-area {
+.blog .content-area, .single-post .content-area, .page-template-default:not(.home) .content-area, .search .content-area, .error404 .content-area {
   width: 73%;
   padding-right: 5%;
   border-right: 1px solid #e1e1e1;
   padding-top: 40px; }
 
-.blog .widget-area, .single-post .widget-area, .page-template-default:not(.home) .widget-area, .search-results .widget-area, .error404 .widget-area {
+.blog .widget-area, .single-post .widget-area, .page-template-default:not(.home) .widget-area, .search .widget-area, .error404 .widget-area {
   width: 25%;
   padding-top: 40px;
   padding-left: 3%; }
@@ -1023,10 +1024,11 @@ object {
   margin-top: 63px; }
 
 /* 404 Page */
-.error404 fieldset {
-  border: none; }
+.error404 fieldset, .search-no-results fieldset {
+  border: none;
+  padding-left: 0; }
 
-.error404 ul {
+.error404 ul, .search-no-results ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
