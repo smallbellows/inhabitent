@@ -43,8 +43,6 @@
     }
   }
 
-
-
   .transparent-header {
     @include transparent-header;
 
@@ -72,4 +70,10 @@
     }
   }
 
+}
+
+// move site header below admin bar when logged in
+
+.logged-in .site-header {
+  top: 20px;
 }
