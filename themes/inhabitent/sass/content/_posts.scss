@@ -1,7 +1,3 @@
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-
 /* Posts and pages */
 
 .sticky {
@@ -99,21 +95,4 @@
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
-}
-
-/* Comments */
-
-.comment-content a {
-	word-wrap: break-word;
-}
-.bypostauthor {
-	display: block;
-}
-
-
-
-/* Social Media Buttons */
-
-.social-buttons {
-	margin-top: $base__space-unit;
 }

@@ -525,6 +525,10 @@ a {
   border-color: white;
   color: white; }
 
+/* Social Media Buttons */
+.social-buttons {
+  margin-top: 1.5em; }
+
 /* Menus */
 .main-navigation {
   width: auto;
@@ -659,39 +663,186 @@ a {
   margin: 0 auto; }
 
 /*--------------------------------------------------------------
-# Widgets
+# Media
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none; }
-
-.widget_archive ul {
-  list-style: none;
-  margin: 0;
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
   padding: 0; }
 
-.widget p {
-  margin-bottom: 0.5em; }
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
 
-/* Contact Info Widget */
-.contact-us {
+/* Captions */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/* Galleries*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Site Header
+--------------------------------------------------------------*/
+.site-header {
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 10; }
+
+.site-header .container {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
-.contact-us i {
-  width: 20px;
-  line-height: 2;
-  margin-right: 0.5rem; }
+.site-branding h1, .site-branding .home h2, .home .site-branding h2 {
+  height: 33px;
+  width: 50px;
+  margin: 0;
+  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+  background-size: 50px 33px;
+  overflow: hidden;
+  text-indent: 100%; }
+
+.home .site-header, .page-template-about .site-header, .single-adventure .site-header {
+  position: absolute;
+  z-index: 3;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: none; }
+
+.home .site-branding h1, .home .site-branding h2, .page-template-about .site-branding h1, .page-template-about .site-branding .home h2, .home .page-template-about .site-branding h2, .single-adventure .site-branding h1, .single-adventure .site-branding .home h2, .home .single-adventure .site-branding h2 {
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px 33px; }
+
+.home .transparent-header, .page-template-about .transparent-header, .single-adventure .transparent-header {
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 10; }
+  .home .transparent-header h1, .home .transparent-header h2, .page-template-about .transparent-header h1, .page-template-about .transparent-header .home h2, .home .page-template-about .transparent-header h2, .single-adventure .transparent-header h1, .single-adventure .transparent-header .home h2, .home .single-adventure .transparent-header h2 {
+    height: 33px;
+    width: 50px;
+    margin: 0;
+    background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+    background-size: 50px 33px;
+    overflow: hidden;
+    text-indent: 100%; }
+  .home .transparent-header .main-navigation a, .page-template-about .transparent-header .main-navigation a, .single-adventure .transparent-header .main-navigation a {
+    color: #248A83; }
+    .home .transparent-header .main-navigation a:hover, .page-template-about .transparent-header .main-navigation a:hover, .single-adventure .transparent-header .main-navigation a:hover {
+      color: #2f1339; }
+
+.home .main-navigation a, .page-template-about .main-navigation a, .single-adventure .main-navigation a {
+  color: #fff; }
+  .home .main-navigation a:hover, .page-template-about .main-navigation a:hover, .single-adventure .main-navigation a:hover {
+    color: #f0e4d1; }
+
+.logged-in .site-header {
+  top: 20px; }
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+.comments-area h2, .comments-area h3 {
+  text-transform: uppercase; }
+
+.comments-area ol {
+  margin: 0;
+  padding: 0; }
+
+.comment-body {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.comment-author-avatar {
+  float: left;
+  width: 75px; }
+
+.comment-meta, .comment-content {
+  margin-left: 75px;
+  padding-left: 1.5em; }
+
+.comment-content {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #e1e1e1; }
+
+.avatar {
+  border-radius: 50%; }
+
+.comment-form label {
+  display: block; }
+
+.comment-form input[type=text], .comment-form input[type=email], .comment-form input[type=url] {
+  width: 100%; }
+
+.comment-form-author, .comment-form-email {
+  width: 49%;
+  float: left; }
+
+.comment-form-email {
+  margin-left: 2%; }
+
+.comment-form-url {
+  width: 100%; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -763,76 +914,40 @@ a {
 .archive .format-aside .entry-title {
   display: none; }
 
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
 
-.bypostauthor {
-  display: block; }
+/* Search widget. */
+.widget_search .search-submit {
+  display: none; }
+
+.widget_archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.widget p {
+  margin-bottom: 0.5em; }
+
+/* Contact Info Widget */
+.contact-us {
+  display: -ms-flexbox;
+  display: flex; }
+
+.contact-us i {
+  width: 20px;
+  line-height: 2;
+  margin-right: 0.5rem; }
 
 /* Social Media Buttons */
 .social-buttons {
   margin-top: 1.5em; }
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/* Captions */
-.wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
-
-.wp-caption-text {
-  text-align: center; }
-
-/* Galleries*/
-.gallery {
-  margin-bottom: 1.5em; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
-
-.gallery-caption {
-  display: block; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -905,118 +1020,6 @@ object {
 /* Pages with out a sidebar and without a header image */
 .post-type-archive .site-content {
   margin-top: 63px; }
-
-/*--------------------------------------------------------------
-# Site Header
---------------------------------------------------------------*/
-.site-header {
-  padding: 15px 0;
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: 10; }
-
-.site-header .container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.site-branding h1, .site-branding .home h2, .home .site-branding h2 {
-  height: 33px;
-  width: 50px;
-  margin: 0;
-  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
-  background-size: 50px 33px;
-  overflow: hidden;
-  text-indent: 100%; }
-
-.home .site-header, .page-template-about .site-header, .single-adventure .site-header {
-  position: absolute;
-  z-index: 3;
-  background-color: transparent;
-  width: 100%;
-  border-bottom: none; }
-
-.home .site-branding h1, .home .site-branding h2, .page-template-about .site-branding h1, .page-template-about .site-branding .home h2, .home .page-template-about .site-branding h2, .single-adventure .site-branding h1, .single-adventure .site-branding .home h2, .home .single-adventure .site-branding h2 {
-  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
-  background-size: 50px 33px; }
-
-.home .transparent-header, .page-template-about .transparent-header, .single-adventure .transparent-header {
-  padding: 15px 0;
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: 10; }
-  .home .transparent-header h1, .home .transparent-header h2, .page-template-about .transparent-header h1, .page-template-about .transparent-header .home h2, .home .page-template-about .transparent-header h2, .single-adventure .transparent-header h1, .single-adventure .transparent-header .home h2, .home .single-adventure .transparent-header h2 {
-    height: 33px;
-    width: 50px;
-    margin: 0;
-    background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
-    background-size: 50px 33px;
-    overflow: hidden;
-    text-indent: 100%; }
-  .home .transparent-header .main-navigation a, .page-template-about .transparent-header .main-navigation a, .single-adventure .transparent-header .main-navigation a {
-    color: #248A83; }
-    .home .transparent-header .main-navigation a:hover, .page-template-about .transparent-header .main-navigation a:hover, .single-adventure .transparent-header .main-navigation a:hover {
-      color: #2f1339; }
-
-.home .main-navigation a, .page-template-about .main-navigation a, .single-adventure .main-navigation a {
-  color: #fff; }
-  .home .main-navigation a:hover, .page-template-about .main-navigation a:hover, .single-adventure .main-navigation a:hover {
-    color: #f0e4d1; }
-
-.logged-in .site-header {
-  top: 20px; }
-
-/*--------------------------------------------------------------
-# Comments
---------------------------------------------------------------*/
-.comments-area h2, .comments-area h3 {
-  text-transform: uppercase; }
-
-.comments-area ol {
-  margin: 0;
-  padding: 0; }
-
-.comment-body {
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-
-.comment-author-avatar {
-  float: left;
-  width: 75px; }
-
-.comment-meta, .comment-content {
-  margin-left: 75px;
-  padding-left: 1.5em; }
-
-.comment-content {
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #e1e1e1; }
-
-.avatar {
-  border-radius: 50%; }
-
-.comment-form label {
-  display: block; }
-
-.comment-form input[type=text], .comment-form input[type=email], .comment-form input[type=url] {
-  width: 100%; }
-
-.comment-form-author, .comment-form-email {
-  width: 49%;
-  float: left; }
-
-.comment-form-email {
-  margin-left: 2%; }
-
-.comment-form-url {
-  width: 100%; }
 
 /*--------------------------------------------------------------
 # Home Page 
@@ -1194,6 +1197,58 @@ object {
   overflow: hidden; }
 
 /*--------------------------------------------------------------
+# Adventure Custom Posts
+--------------------------------------------------------------*/
+.adventure-grid {
+  margin: 50px auto;
+  width: 1120px; }
+
+.adventure-post {
+  min-width: 545px;
+  min-height: 545px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px; }
+  .adventure-post .wp-post-image {
+    width: auto;
+    max-width: none;
+    height: 545px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+  .adventure-post .button, .adventure-post .button-reverse, .adventure-post .read-more, .adventure-post .social-button, .adventure-post .read-more-white {
+    font-size: 1.2rem; }
+
+.adventure-wrapper:after {
+  background: rgba(0, 0, 0, 0.35);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+
+.adventure-header img {
+  width: 100%;
+  height: auto; }
+
+.adventure-container {
+  width: 800px;
+  margin: 20px auto; }
+
+.adventure-title {
+  font-weight: bold;
+  font-size: 3rem; }
+
+.entry-meta {
+  font-family: "Novocento", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+/*--------------------------------------------------------------
 # Product CPT Styles
 --------------------------------------------------------------*/
 /* Single Product Pages */
@@ -1307,58 +1362,6 @@ h3.price {
     .cpt-grid .product-meta span {
       background: #fff;
       padding-right: 1rem; }
-
-/*--------------------------------------------------------------
-# Adventure Custom Posts
---------------------------------------------------------------*/
-.adventure-grid {
-  margin: 50px auto;
-  width: 1120px; }
-
-.adventure-post {
-  min-width: 545px;
-  min-height: 545px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 30px; }
-  .adventure-post .wp-post-image {
-    width: auto;
-    max-width: none;
-    height: 545px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; }
-  .adventure-post .button, .adventure-post .button-reverse, .adventure-post .read-more, .adventure-post .social-button, .adventure-post .read-more-white {
-    font-size: 1.2rem; }
-
-.adventure-wrapper:after {
-  background: rgba(0, 0, 0, 0.35);
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 2; }
-
-.adventure-header img {
-  width: 100%;
-  height: auto; }
-
-.adventure-container {
-  width: 800px;
-  margin: 20px auto; }
-
-.adventure-title {
-  font-weight: bold;
-  font-size: 3rem; }
-
-.entry-meta {
-  font-family: "Novocento", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2rem; }
 
 /*--------------------------------------------------------------
 # Site Footer
