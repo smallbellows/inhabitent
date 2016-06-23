@@ -5,7 +5,8 @@ jQuery(document).ready(function($) {
 
   $('.toggle-search').on('click', function() {
 
-    $input = $('input.header');
+
+    $input = $('.header-search input');
     $input.toggle('slow');
     $input.focus();
 
